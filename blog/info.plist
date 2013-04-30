@@ -17,6 +17,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>695A1979-E0FB-4D0D-961A-3D0FB65E49BB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CCC2395B-91BC-43A8-9855-FF20768A642F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>73F90149-5DE0-46A4-8ED0-99CF1FD046E3</key>
 		<array>
 			<dict>
@@ -99,6 +110,8 @@ middleman build --clean &amp;&amp; middleman deploy --clean</string>
 				<integer>0</integer>
 				<key>keyword</key>
 				<string>blp</string>
+				<key>subtext</key>
+				<string>Commit, push and deploy</string>
 				<key>text</key>
 				<string>Blog publish</string>
 				<key>withspace</key>
@@ -139,6 +152,8 @@ middleman build --clean &amp;&amp; middleman deploy --clean</string>
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>bld</string>
+				<key>subtext</key>
+				<string>Deploy to server</string>
 				<key>text</key>
 				<string>Blog deploy</string>
 				<key>withspace</key>
@@ -226,6 +241,70 @@ open `middleman article test | awk '{print $3}'`
 			<key>uid</key>
 			<string>1C5C576D-6B6E-4206-B106-660A0D8E0A4B</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>blo</string>
+				<key>scopes</key>
+				<array>
+					<string>~/Projects/sites/blog/source/posts</string>
+				</array>
+				<key>subtext</key>
+				<string>Open a blog post</string>
+				<key>title</key>
+				<string>Blog open</string>
+				<key>types</key>
+				<array/>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>695A1979-E0FB-4D0D-961A-3D0FB65E49BB</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CCC2395B-91BC-43A8-9855-FF20768A642F</string>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -240,6 +319,11 @@ open `middleman article test | awk '{print $3}'`
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
+		</dict>
+		<key>695A1979-E0FB-4D0D-961A-3D0FB65E49BB</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
 		</dict>
 		<key>73F90149-5DE0-46A4-8ED0-99CF1FD046E3</key>
 		<dict>
@@ -260,6 +344,11 @@ open `middleman article test | awk '{print $3}'`
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>CCC2395B-91BC-43A8-9855-FF20768A642F</key>
+		<dict>
+			<key>ypos</key>
+			<real>370</real>
 		</dict>
 		<key>E38B39D9-A36B-4B13-813C-BBC33C778E96</key>
 		<dict>
